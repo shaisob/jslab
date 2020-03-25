@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>name</title>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>Name:</td>
+		</tr>
+		<tr>
+			<td><input id="name" type="text" name="uname" value=""></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="btn" value="submit" onclick="f1()"></td>
+		</tr>
+	</table>
+
+	<p id="msg"></p>
+
+	<script>
+		
+		
+
+		function f1(){
+			var name = document.getElementById('name').value;
+			if (name == "") {
+				 document.getElementById('msg').innerHTML="cannot be empty";
+				 break;
+
+			}
+
+
+
+		}
+
+	</script>
+
+</body>
+</html>
